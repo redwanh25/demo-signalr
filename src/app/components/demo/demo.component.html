@@ -1,0 +1,9 @@
+<p>{{connectMessage}}</p>
+
+<button (click)="callAPIGet1()">Call API Get1</button>
+
+<ul *ngIf="persons">
+    <li *ngFor="let person of persons">
+        {{person.name}}
+    </li>
+</ul>
